@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com./ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../src/css/reset.css" />
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="icon" href="../src/img/rinshi.png" />
+    <title>Rinshi | Faça o seu login</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <a href="../index.html" class="logo">
+        <img
+          src="../src/img/rinshir.png"
+          alt="logo da empresa rinshi"
+          class="imagem"
+          height="100px"
+        />
+        <span class="nome">Rinshi</span>
+      </a>
+
+      <nav class="navegacao">
+        <ul class="menu">
+          <li class="item"><a href="../index.html#quem-somos">Quem somos</a></li>
+          <li class="item"><a href="../index.html#equipe">Equipe</a></li>
+          <li class="item"><a href="../index.html#contato">Contato</a></li>
+          <li class="item"><a href="../index.html#review">Avaliações</a></li>
+          <li class="item"><a href="../index.html#conta">Login</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li class="item"><a href="../index.html#quem-somos">Quem somos</a></li>
+          <li class="item"><a href="../index.html#equipe">Equipe</a></li>
+          <li class="item"><a href="../index.html#contato">Contato</a></li>
+          <li class="item"><a href="../index.html#review">Avaliações</a></li>
+          <li class="item"><a href="../index.html#conta">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="login-left">
+        <h1>
+          faça login <br />
+          e acompanhe o nosso projeto
+        </h1>
+        <img
+          src="../src/img/solarsis.svg"
+          class="login-image"
+          alt="Sistema Solar"
+        />
+      </div>
+
+      <div class="login-right">
+        <div class="card-login using" id="cardl">
+          <h1>Login</h1>
+          <div class="textarea">
+            <label for="usuario">Usuário</label>
+            <input type="text" name="usuario" placeholder="Usuário" />
+          </div>
+
+          <div class="textarea">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" placeholder="Senha" />
+          </div>
+          <div class="textarea">
+            <p>não tem uma conta? <a id="createacc">Crie uma</a></p>
+          </div>
+
+          <button class="btn-login">
+            <a href="../projetos.html">Login</a>
+          </button>
+        </div>
+
+        <div class="card-sign" id="card-sign">
+          <h1>Criar conta</h1>
+          <div class="textarea">
+            <label for="usuario">Usuário</label>
+            <input type="text" name="usuario" id="user" placeholder="Usuário" />
+          </div>
+
+          <div class="textarea">
+            <label for="senha">Senha</label>
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="Senha"
+            />
+          </div>
+
+          <div class="textarea">
+            <label for="rsenha">Repita sua senha</label>
+            <input
+              type="password"
+              name="rsenha"
+              id="rsenha"
+              placeholder="Repita sua senha"
+            />
+          </div>
+
+          <button class="btn-login" id="loging" type="submit">
+            Criar conta
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="rodape">
+      <nav class="navegacao">
+        <a href="../index.html" class="logo">
+          <img
+            src="../src/img/rinshir.png"
+            alt="logo da empresa rinshi"
+            class="imagem"
+          />
+          <span class="nome">Rinshi</span>
+        </a>
+        <div class="redes-sociais" id="contato">
+          <a
+            href="https://www.instagram.com/rinshi_gp/"
+            target="_blank"
+            class="rede-social"
+          >
+            <i class="fab fa-instagram-square"></i>
+          </a>
+
+          <a
+            href="https://github.com/Tokushikashi"
+            target="_blank"
+            class="rede-social"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.youtube.com/watch?v=EjY-tILXJCU"
+            target="_blank"
+            class="rede-social"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </nav>
+
+      <p class="copyright">Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com./ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+    <script src="./login.js"></script>
+    <script src="../src/js/hamburger.js"></script>
+  </body>
+</html>

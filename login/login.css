@@ -1,0 +1,469 @@
+/* CABECALHO */
+body {
+    font-family: "louis george cafe", sans-serif;
+  }
+  
+  body * {
+    box-sizing: border-box;
+  }
+  
+  .logo .imagem {
+    width: 100px;
+  }
+  
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10px; /* Ajuste o padding para telas menores */
+    width: 100vw;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    background-color: #d4d4d4;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0px 2px 9px 0px black;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  
+  .logo .nome {
+    margin-left: 7px;
+    font-size: 17px;
+    transition: 0.4s ease-in-out;
+    font-weight: 800;
+    font-family: "decaydence", monospace;
+  }
+  
+  .logo .nome:hover {
+    color: #b80808;
+  }
+  
+  .cabecalho .navegacao .menu {
+    display: flex;
+  }
+  
+  .cabecalho .navegacao .menu .item {
+    margin: 10px;
+  }
+  
+  .cabecalho .navegacao .menu .item a {
+    padding: 15px;
+    transition: 0.4s ease-in-out;
+  }
+  
+  .cabecalho .navegacao .menu .item a:hover {
+    background-color: #b80808;
+    border-radius: 15px;
+    color: whitesmoke;
+  }
+  
+  .cabecalho .navegacao .menu .item .lg-btn {
+    padding: 20px;
+  }
+  
+  /* MENU HAMBURGUER */
+  .hammenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    display: none;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    margin: 0 15px;
+  }
+  
+  .nav-list a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #342f2f;
+    margin: 3px 0;
+  }
+  
+  /* CABECALHO */
+  
+  main {
+    width: 100%;
+    height: 100%;
+    background-color: #342f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    overflow: hidden;
+    gap: 300px;
+  }
+  
+  .login-left {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .login-left > h1 {
+    color: #b80808;
+    font-size: 1.5vw;
+  }
+  
+  .login-image {
+    width: 35vw;
+  }
+  
+  .login-right {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #4a4343;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #0000005a;
+    visibility: hidden;
+  }
+  
+  .card-login > h1 {
+    color: #b80808;
+    font-weight: 800;
+    margin: 0;
+  }
+  
+  .card-login.using {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #4a4343;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #0000005a;
+    visibility: visible;
+    position: relative;
+    right: 0px;
+    left: 120px;
+  }
+  
+  .textarea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .textarea > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #655656;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #0000005a;
+    outline: none;
+    box-sizing: border-box;
+    margin: 10px 0px;
+  }
+  
+  .textarea > label {
+    color: #f0ffffde;
+  }
+  
+  .textarea > input::placeholder {
+    color: #f0ffff94;
+  }
+  
+  .textarea > p {
+    color: #f0ffffde;
+    margin-top: 10px;
+  }
+  
+  .textarea > p > a {
+    color: #da0303;
+    cursor: pointer;
+  }
+  
+  .btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #131313;
+    background-color: #b80808;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #7e0606;
+  }
+  
+  .card-sign {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #4a4343;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #0000005a;
+    position: relative;
+    right: 477px;
+    visibility: hidden;
+  }
+  
+  .card-sign.using {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #4a4343;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #0000005a;
+    position: relative;
+    right: 300px;
+    visibility: visible;
+  }
+  
+  .card-sign > h1 {
+    color: #b80808;
+    font-weight: 800;
+    margin: 0;
+  }
+  
+  /* RODAPE */
+  
+  .rodape {
+    padding: 80px 0 20px 0;
+    background-color: #d4d4d4;
+  }
+  
+  .rodape .navegacao {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .rodape .redes-sociais {
+    display: flex;
+  }
+  
+  .rodape .redes-sociais a {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    font-size: 30px;
+    border: 2px solid #111;
+    border-radius: 50px;
+    padding: 15px;
+    width: 65px;
+    transition: 0.4s ease-in-out;
+  }
+  
+  .rodape .redes-sociais a:hover {
+    background-color: #b80808;
+  }
+  
+  .rodape .copyright {
+    margin-top: 70px;
+    text-align: center;
+  }
+  
+  /* Media Queries */
+  
+  @media only screen and (max-width: 600px) {
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .cabecalho {
+      width: 100vw;
+      padding-right: 0;
+    }
+  
+    .rodape {
+      width: 100vw;
+      margin: 0;
+      padding-right: 0;
+    }
+  
+    main .login-left {
+      width: 100vw;
+      height: 45%;
+    }
+  
+    .login-left .login-image {
+      width: 100vw;
+      height: 50vh;
+    }
+  
+    .login-left h1 {
+      padding-top: 50px;
+      font-size: 27pt;
+    }
+  
+    main .login-right {
+      height: 55%;
+      width: 100vw;
+    }
+  
+    .card-login.using {
+      width: 100vw;
+      position: absolute;
+      left: 0px;
+    }
+  
+    .card-sign.using {
+      position: absolute;
+      width: 100vw;
+      left: 0px;
+      height: 50%;
+    }
+  }
+  /* MENU HAMBURGUER */
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #342f2f;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .nav {
+    display: none;
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav ul li {
+    margin: 0 15px;
+  }
+  
+  .nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 600px) {
+    .cabecalho {
+      width: 100vw;
+    }
+  
+    .navegacao {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .nav {
+      display: none;
+      width: 100%;
+      background-color: #342f2f;
+      border-radius: 20px;
+      box-shadow: 0px 30px 50px black;
+      justify-content: right;
+    }
+  
+    .nav ul {
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      margin-right: 40px;
+      max-height: 0;
+      overflow: hidden;
+    }
+  
+    .nav.active {
+      display: block;
+      width: 50vw;
+      top: 95px;
+      height: 100vh;
+      position: absolute;
+      right: 0;
+    }
+  
+    .nav.active ul {
+      max-height: 100%;
+  }
+  
+    .nav ul li {
+      margin-top: 80px;
+      background-color: #b80808;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0px 10px 40px -12px #7e0606;
+    }
+  
+    .menu-toggle.active .bar:nth-child(1) {
+      transform: translateY(10px) rotate(45deg);
+    }
+  
+    .menu-toggle.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-toggle.active .bar:nth-child(3) {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+  }
+  
