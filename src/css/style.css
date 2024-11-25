@@ -4,6 +4,10 @@ main {
   overflow: hidden;
 }
 
+.nome{
+  font-family: 'decaydence', poppins, monospace;
+}
+
 .container {
   background-color: #342f2f;
   width: 100%;
